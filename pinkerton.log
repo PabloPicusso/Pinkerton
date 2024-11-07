@@ -1,0 +1,106 @@
+2024-11-07 11:46:00,470 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'setup_gui'
+2024-11-07 11:47:23,747 - ERROR - GUI components not properly initialized
+2024-11-07 11:47:23,747 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'start_monitoring'
+2024-11-07 11:49:51,855 - INFO - Network monitoring started
+2024-11-07 11:49:51,855 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'start_monitoring'
+2024-11-07 11:51:21,038 - INFO - Network monitoring started
+2024-11-07 11:51:21,038 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'start_monitoring'
+2024-11-07 11:52:50,196 - INFO - Network monitoring started
+2024-11-07 11:52:50,196 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'start_monitoring'
+2024-11-07 12:17:57,252 - WARNING - No training data available
+2024-11-07 12:17:57,253 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'create_packet_analyzer_tab'
+2024-11-07 12:18:01,167 - WARNING - No training data available
+2024-11-07 12:18:01,168 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'create_packet_analyzer_tab'
+2024-11-07 12:18:33,032 - WARNING - No training data available
+2024-11-07 12:18:33,033 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'create_packet_analyzer_tab'
+2024-11-07 12:19:05,612 - WARNING - No training data available
+2024-11-07 12:19:05,613 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'create_packet_analyzer_tab'
+2024-11-07 12:19:11,984 - WARNING - No training data available
+2024-11-07 12:19:11,986 - CRITICAL - Fatal error: 'PinkertonIntegration' object has no attribute 'create_packet_analyzer_tab'
+2024-11-07 12:21:08,479 - WARNING - No training data available
+2024-11-07 12:21:08,481 - CRITICAL - Fatal error: name 'ThemedStyle' is not defined
+2024-11-07 12:21:42,253 - WARNING - No training data available
+2024-11-07 12:21:42,526 - INFO - Network monitoring started
+2024-11-07 12:21:42,526 - ERROR - Error scheduling report generation: 'PinkertonIntegration' object has no attribute 'generate_report'
+2024-11-07 12:22:24,217 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:22:36,432 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:22:38,510 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:23:45,490 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:23:51,234 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:24:26,730 - WARNING - No training data available
+2024-11-07 12:24:26,730 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'initialize_attributes'
+2024-11-07 12:25:19,728 - WARNING - No training data available
+2024-11-07 12:25:20,004 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'create_dashboard_tab'
+2024-11-07 12:26:36,705 - WARNING - No training data available
+2024-11-07 12:26:37,109 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'start_monitoring'
+2024-11-07 12:27:43,893 - WARNING - No training data available
+2024-11-07 12:27:45,288 - ERROR - Error scheduling report generation: 'PinkertonIntegration' object has no attribute 'generate_report'
+2024-11-07 12:31:21,007 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:31:21,577 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:31:23,559 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:31:29,219 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:31:34,271 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:31:48,812 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:33:56,058 - WARNING - No training data available
+2024-11-07 12:33:57,466 - ERROR - Error scheduling report generation: 'PinkertonIntegration' object has no attribute 'generate_report'
+2024-11-07 12:34:23,299 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:37:02,353 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:37:04,415 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 12:37:23,477 - WARNING - No training data available
+2024-11-07 12:37:24,884 - ERROR - Error scheduling report generation: 'PinkertonIntegration' object has no attribute 'generate_report'
+2024-11-07 12:38:11,018 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 19:57:47,163 - WARNING - No training data available
+2024-11-07 19:57:47,949 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'create_system_status_widget'
+2024-11-07 19:59:24,733 - WARNING - No training data available
+2024-11-07 19:59:26,107 - ERROR - Error updating network info: main thread is not in main loop
+2024-11-07 19:59:26,241 - ERROR - Error scheduling report generation: 'PinkertonIntegration' object has no attribute 'generate_report'
+2024-11-07 20:03:00,681 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 20:03:23,487 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 20:03:23,967 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 20:03:35,768 - ERROR - Error during shutdown: 'PinkertonIntegration' object has no attribute 'stop_monitoring'
+2024-11-07 20:09:11,424 - WARNING - No training data available
+2024-11-07 20:09:11,424 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:10:13,715 - WARNING - No training data available
+2024-11-07 20:10:14,681 - CRITICAL - Fatal error: 'PinkertonApp' object has no attribute 'on_closing'
+2024-11-07 20:10:47,065 - WARNING - No training data available
+2024-11-07 20:10:47,911 - CRITICAL - Fatal error: 'PinkertonApp' object has no attribute 'on_closing'
+2024-11-07 20:11:45,526 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:12:19,670 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:13:41,434 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:15:49,856 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:20:08,468 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:21:40,453 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'on_closing'
+2024-11-07 20:22:54,856 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'initialize_attributes'
+2024-11-07 20:23:22,197 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'initialize_attributes'
+2024-11-07 20:24:05,442 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'initialize_attributes'
+2024-11-07 20:24:19,111 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'setup_gui'
+2024-11-07 20:25:36,540 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'create_dashboard_tab'
+2024-11-07 20:29:50,615 - CRITICAL - Fatal error: name 'BANNER' is not defined
+2024-11-07 20:31:18,906 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'create_port_scanner_tab'
+2024-11-07 20:32:43,536 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'create_network_monitor_tab'
+2024-11-07 20:34:37,763 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'create_vulnerability_scanner_tab'
+2024-11-07 22:24:10,519 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:41:10,514 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:41:13,130 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:42:18,618 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:42:21,223 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:43:11,376 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:43:13,993 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:44:26,763 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:44:29,365 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:47:10,578 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:47:13,167 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:48:06,792 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:48:09,437 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:50:46,073 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 22:50:48,643 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 23:20:30,623 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 23:20:33,225 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 23:21:33,778 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 23:21:36,360 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 23:22:54,614 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-07 23:22:57,207 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 00:29:04,573 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 00:29:07,160 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 00:34:41,543 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 00:34:44,123 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
