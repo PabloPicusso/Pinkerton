@@ -1,0 +1,24 @@
+{
+    "monitoring": {
+        "packet_capture": true,
+        "threat_detection": true,
+        "ml_detection": true,
+        "automated_response": true
+    },
+    "thresholds": {
+        "port_scan": 10,
+        "brute_force": 5,
+        "ddos": 1000,
+        "anomaly_score": 0.8
+    },
+    "reporting": {
+        "auto_generate": true,
+        "report_interval": 86400,
+        "save_path": "reports/"
+    },
+    "notifications": {
+        "email": false,
+        "desktop": true,
+        "log": true
+    }
+}
