@@ -104,3 +104,33 @@
 2024-11-08 00:29:07,160 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
 2024-11-08 00:34:41,543 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
 2024-11-08 00:34:44,123 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 01:35:07,670 - CRITICAL - Fatal error: name 'BANNER' is not defined
+2024-11-08 01:35:09,555 - ERROR - Cleanup error: 'PinkertonGUI' object has no attribute 'cpu_figure'
+2024-11-08 01:35:18,888 - CRITICAL - Fatal error: name 'BANNER' is not defined
+2024-11-08 01:35:24,700 - ERROR - Cleanup error: 'PinkertonGUI' object has no attribute 'cpu_figure'
+2024-11-08 01:43:33,505 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 01:43:36,122 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 01:51:28,135 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:51:45,769 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:52:55,320 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:53:08,879 - ERROR - Cleanup error: 'PinkertonGUI' object has no attribute 'cpu_figure'
+2024-11-08 01:54:42,858 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'enhance_port_scanner'
+2024-11-08 01:54:49,874 - ERROR - Cleanup error: 'PinkertonGUI' object has no attribute 'cpu_figure'
+2024-11-08 01:55:00,741 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:07,514 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'run'
+2024-11-08 01:55:12,111 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:17,606 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:18,747 - ERROR - Cleanup error: 'PinkertonGUI' object has no attribute 'cpu_figure'
+2024-11-08 01:55:23,428 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:33,039 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:38,204 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:44,667 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:49,697 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:55:56,271 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:56:09,555 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:56:17,695 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:56:27,681 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:56:34,478 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:56:43,263 - CRITICAL - Fatal error: 'PinkertonGUI' object has no attribute 'vuln_tree'
+2024-11-08 01:57:28,487 - ERROR - FTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+2024-11-08 01:57:31,073 - ERROR - SMTP check error: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435

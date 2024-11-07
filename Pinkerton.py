@@ -15,8 +15,10 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 
-# ASCII Art Banner
-BANNER = """
+# ASCII Art Banners
+LEFT_BANNER = """
+
+
 ██████╗ ██╗███╗   ██╗██╗  ██╗███████╗██████╗ ████████╗ ██████╗ ███╗   ██╗
 ██╔══██╗██║████╗  ██║██║ ██╔╝██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗████╗  ██║
 ██████╔╝██║██╔██╗ ██║█████╔╝ █████╗  ██████╔╝   ██║   ██║   ██║██╔██╗ ██║
@@ -26,9 +28,27 @@ BANNER = """
                         Network Intelligence Suite
                         By : Daniel Goldstein 
                         07/11/2024
+
+
 """
 
-# Color schemes for the GUI
+RIGHT_BANNER = """
+ .------..------..------..------..------..------..------..------..------.
+ |P.--. ||I.--. ||N.--. ||K.--. ||E.--. ||R.--. ||T.--. ||O.--. ||N.--. |
+ | :/\: || (\/) || :(): || :/\: || (\/) || :(): || :/\: || :/\: || :(): |
+ | (__) || :\/: || ()() || :\/: || :\/: || ()() || (__) || :\/: || ()() |
+ | '--'P|| '--'I|| '--'N|| '--'K|| '--'E|| '--'R|| '--'T|| '--'O|| '--'N|
+ `------'`------'`------'`------'`------'`------'`------'`------'`------'
+     .------..------..------..------..------..------..------..------.
+     |S.--. ||D.--. ||E.--. ||T.--. ||E.--. ||C.--. ||T.--. ||S.--. |
+     | :/\: || :/\: || (\/) || :/\: || (\/) || :/\: || :/\: || :/\: |
+     | :\/: || (__) || :\/: || (__) || :\/: || :\/: || (__) || :\/: |
+     | '--'S|| '--'D|| '--'E|| '--'T|| '--'E|| '--'C|| '--'T|| '--'S|
+     `------'`------'`------'`------'`------'`------'`------'`------'
+                         WE NEVER SLEEP
+"""
+
+
 THEMES = {
     'cyberpunk': {
         'bg': '#0a0a0a',
@@ -582,6 +602,9 @@ class PinkertonGUI:
         self.scanning = False
         self.root.title("PINKERTON - Network Intelligence Suite")
         self.root.geometry("1300x900")
+        self.monitoring = False  # Initialize as False
+        self.update_after_id = None 
+        self.root.protocol("WM_DELETE_WINDOW", self.on_closing) 
         
         # Set theme and style
         self.style = ttk.Style()
@@ -605,6 +628,57 @@ class PinkertonGUI:
 
         # Configure vulnerability tree style
         self.configure_vuln_tree_style()
+        
+
+
+    def on_closing(self):
+        """Handle program closing properly"""
+        try:
+            self.monitoring = False
+            # Cancel any pending after callbacks
+            if self.update_after_id is not None:
+                self.root.after_cancel(self.update_after_id)
+                self.update_after_id = None
+            
+            # Destroy matplotlib figures if they exist
+            if hasattr(self, 'cpu_figure'):
+                plt.close(self.cpu_figure)
+            if hasattr(self, 'mem_figure'):
+                plt.close(self.mem_figure)
+            if hasattr(self, 'net_figure'):
+                plt.close(self.net_figure)
+                
+            self.root.quit()
+            self.root.destroy()
+        except Exception as e:
+            logging.error(f"Error during cleanup: {str(e)}")
+            self.root.destroy()
+
+    def update_graphs(self):
+        """Update network monitoring graphs"""
+        if not self.monitoring:
+            return
+            
+        try:
+            # ... existing update code ...
+            
+            # Store the after callback ID
+            if self.monitoring:
+                self.update_after_id = self.root.after(1000, self.update_graphs)
+        except Exception as e:
+            logging.error(f"Error updating graphs: {str(e)}")
+            if self.monitoring:
+                self.update_after_id = self.root.after(1000, self.update_graphs)
+
+    def run(self):
+        """Start the application"""
+        try:
+            self.root.mainloop()
+        except KeyboardInterrupt:
+            self.on_closing()
+        except Exception as e:
+            logging.error(f"Error in main loop: {str(e)}")
+            self.on_closing()
 
 
     def configure_vuln_tree_style(self):
@@ -1429,35 +1503,47 @@ class PinkertonGUI:
         graphs_frame = ttk.LabelFrame(monitor_frame, text="Network Activity", padding=10)
         graphs_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
-        # Create CPU usage graph
-        cpu_frame = ttk.LabelFrame(graphs_frame, text="CPU Usage", padding=5)
+        # Initialize data storage for graphs
+        self.cpu_data = []
+        self.mem_data = []
+        self.net_data = []
+        self.timestamps = []
+
+        # CPU Usage Graph
+        cpu_frame = ttk.LabelFrame(graphs_frame, text="CPU Usage (%)", padding=5)
         cpu_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         
-        self.cpu_figure, self.cpu_ax = plt.subplots(figsize=(6, 2))
+        self.cpu_figure, self.cpu_ax = plt.subplots(figsize=(8, 2))
+        self.cpu_ax.set_facecolor('#2b2b2b')
+        self.cpu_figure.patch.set_facecolor('#2b2b2b')
         self.cpu_canvas = FigureCanvasTkAgg(self.cpu_figure, master=cpu_frame)
         self.cpu_canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
         
-        # Create Memory usage graph
-        mem_frame = ttk.LabelFrame(graphs_frame, text="Memory Usage", padding=5)
+        # Memory Usage Graph
+        mem_frame = ttk.LabelFrame(graphs_frame, text="Memory Usage (%)", padding=5)
         mem_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         
-        self.mem_figure, self.mem_ax = plt.subplots(figsize=(6, 2))
+        self.mem_figure, self.mem_ax = plt.subplots(figsize=(8, 2))
+        self.mem_ax.set_facecolor('#2b2b2b')
+        self.mem_figure.patch.set_facecolor('#2b2b2b')
         self.mem_canvas = FigureCanvasTkAgg(self.mem_figure, master=mem_frame)
         self.mem_canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
         
-        # Create Network usage graph
-        net_frame = ttk.LabelFrame(graphs_frame, text="Network Usage", padding=5)
+        # Network Usage Graph
+        net_frame = ttk.LabelFrame(graphs_frame, text="Network Usage (MB/s)", padding=5)
         net_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         
-        self.net_figure, self.net_ax = plt.subplots(figsize=(6, 2))
+        self.net_figure, self.net_ax = plt.subplots(figsize=(8, 2))
+        self.net_ax.set_facecolor('#2b2b2b')
+        self.net_figure.patch.set_facecolor('#2b2b2b')
         self.net_canvas = FigureCanvasTkAgg(self.net_figure, master=net_frame)
         self.net_canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
 
-        # Create statistics frame
+        # Network Statistics Frame
         stats_frame = ttk.LabelFrame(monitor_frame, text="Network Statistics", padding=10)
         stats_frame.pack(fill=tk.X, padx=5, pady=5)
 
-        # Add statistics labels
+        # Statistics Labels
         self.bytes_sent_label = ttk.Label(stats_frame, text="Bytes Sent: 0")
         self.bytes_sent_label.pack(fill=tk.X, padx=5, pady=2)
         
@@ -1471,10 +1557,6 @@ class PinkertonGUI:
         self.packets_recv_label.pack(fill=tk.X, padx=5, pady=2)
 
         # Start monitoring
-        self.start_monitoring()
-
-    def start_monitoring(self):
-        """Start the network monitoring process"""
         self.monitoring = True
         self.update_graphs()
 
@@ -1483,30 +1565,80 @@ class PinkertonGUI:
         if not self.monitoring:
             return
 
-        # Update CPU graph
-        cpu_percent = psutil.cpu_percent()
-        self.cpu_ax.clear()
-        self.cpu_ax.plot([cpu_percent], color='#00ff00')
-        self.cpu_ax.set_ylim(0, 100)
-        self.cpu_canvas.draw()
+        try:
+            # Get current time
+            current_time = datetime.now()
+            self.timestamps.append(current_time)
 
-        # Update Memory graph
-        mem = psutil.virtual_memory()
-        self.mem_ax.clear()
-        self.mem_ax.plot([mem.percent], color='#00ff00')
-        self.mem_ax.set_ylim(0, 100)
-        self.mem_canvas.draw()
+            # Update CPU data
+            cpu_percent = psutil.cpu_percent()
+            self.cpu_data.append(cpu_percent)
+            
+            # Update Memory data
+            mem = psutil.virtual_memory()
+            self.mem_data.append(mem.percent)
+            
+            # Update Network data
+            net = psutil.net_io_counters()
+            net_usage = (net.bytes_sent + net.bytes_recv) / 1024 / 1024  # Convert to MB
+            self.net_data.append(net_usage)
 
-        # Update Network graph
-        net = psutil.net_io_counters()
-        self.bytes_sent_label.config(text=f"Bytes Sent: {net.bytes_sent}")
-        self.bytes_recv_label.config(text=f"Bytes Received: {net.bytes_recv}")
-        self.packets_sent_label.config(text=f"Packets Sent: {net.packets_sent}")
-        self.packets_recv_label.config(text=f"Packets Received: {net.packets_recv}")
+            # Keep only last 60 seconds of data
+            if len(self.timestamps) > 60:
+                self.timestamps.pop(0)
+                self.cpu_data.pop(0)
+                self.mem_data.pop(0)
+                self.net_data.pop(0)
+
+            # Update CPU Graph
+            self.cpu_ax.clear()
+            self.cpu_ax.plot(self.timestamps, self.cpu_data, color='#00ff00', linewidth=2)
+            self.cpu_ax.set_ylim(0, 100)
+            self.cpu_ax.grid(True, color='#404040')
+            self.cpu_ax.tick_params(colors='#00ff00')
+            
+            # Update Memory Graph
+            self.mem_ax.clear()
+            self.mem_ax.plot(self.timestamps, self.mem_data, color='#00ff00', linewidth=2)
+            self.mem_ax.set_ylim(0, 100)
+            self.mem_ax.grid(True, color='#404040')
+            self.mem_ax.tick_params(colors='#00ff00')
+            
+            # Update Network Graph
+            self.net_ax.clear()
+            self.net_ax.plot(self.timestamps, self.net_data, color='#00ff00', linewidth=2)
+            self.net_ax.grid(True, color='#404040')
+            self.net_ax.tick_params(colors='#00ff00')
+
+            # Update statistics labels
+            self.bytes_sent_label.config(text=f"Bytes Sent: {self.format_bytes(net.bytes_sent)}")
+            self.bytes_recv_label.config(text=f"Bytes Received: {self.format_bytes(net.bytes_recv)}")
+            self.packets_sent_label.config(text=f"Packets Sent: {net.packets_sent:,}")
+            self.packets_recv_label.config(text=f"Packets Received: {net.packets_recv:,}")
+
+            # Draw the updated graphs
+            self.cpu_canvas.draw()
+            self.mem_canvas.draw()
+            self.net_canvas.draw()
+
+        except Exception as e:
+            logging.error(f"Error updating graphs: {str(e)}")
 
         # Schedule next update
         self.root.after(1000, self.update_graphs)
 
+    def format_bytes(self, bytes):
+        """Format bytes to human readable format"""
+        for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+            if bytes < 1024:
+                return f"{bytes:.2f} {unit}"
+            bytes /= 1024
+        return f"{bytes:.2f} PB"
+
+    def start_monitoring(self):
+        """Start the network monitoring process"""
+        self.monitoring = True
+        self.update_graphs()
 
 
     def create_port_scanner_tab(self):
@@ -1691,18 +1823,37 @@ class PinkertonGUI:
         )
 
     def create_banner(self):
-        """Create and display the ASCII banner"""
+        """Create and display the ASCII banners"""
         banner_frame = ttk.Frame(self.main_container)
         banner_frame.pack(fill=tk.X, pady=(0, 10))
         
-        banner_text = ttk.Label(
+        # Left banner
+        left_banner = ttk.Label(
             banner_frame,
-            text=BANNER,
+            text=LEFT_BANNER,
             style='Banner.TLabel',
-            justify=tk.CENTER,
+            justify=tk.LEFT,
             font=('Courier', 10, 'bold')
         )
-        banner_text.pack(fill=tk.X)
+        left_banner.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        
+        # Right banner
+        right_banner = ttk.Label(
+            banner_frame,
+            text=RIGHT_BANNER,
+            style='Banner.TLabel',
+            justify=tk.RIGHT,
+            font=('Courier', 10, 'bold')
+        )
+        right_banner.pack(side=tk.RIGHT, fill=tk.X, expand=True)
+
+        # Configure banner style
+        self.style.configure('Banner.TLabel',
+            background='#1a1a1a',
+            foreground='#00ff00',
+            font=('Courier', 10, 'bold')
+        )
+    # Color schemes for the GUI
 
     def create_system_info_display(self):
         info_frame = ttk.LabelFrame(self.main_container, text="System Information")
